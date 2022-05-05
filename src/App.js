@@ -20,7 +20,11 @@ function App() {
 
   function handleSubmitMovie(e) {
     e.preventDefault();
-    let newMovie = { title: movieFormTitle, color: movieFormColor, director: movieFormDirector };
+    let newMovie = {
+      title: movieFormTitle,
+      color: movieFormColor,
+      year: movieFormYearReleased,
+      director: movieFormDirector };
     setAllMovies([...allMovies, newMovie]);
     setMovieFormColor('');
     setMovieFormYearReleased('');
@@ -53,7 +57,9 @@ function App() {
         Filter Movies
         <input onChange={(e) => handleFilterMovies(e.target.value)} />
       </div>
-      <MovieList movies={(filteredMovies.length !== 0) ? filteredMovies : allMovies} />
+      <MovieList
+        handleDeleteMovies={handleDeleteMovie}
+        movies={(filteredMovies.length !== 0) ? filteredMovies : allMovies} />
     </div>
   );
 }
