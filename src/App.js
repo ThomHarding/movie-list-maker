@@ -1,7 +1,6 @@
-import { useState } from 'React';
+import { useState, React } from 'react';
 import MovieForm from './MovieForm';
 import MovieList from './MovieList';
-import Movie from './Movie';
 import './App.css';
 
 function App() {

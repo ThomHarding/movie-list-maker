@@ -12,25 +12,7 @@ export default function MovieForm({
   handleSubmitMovie
 }) {
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    const movie = {
-      title: movieFormTitle,
-      director: movieFormDirector,
-      year: movieFormYearReleased,
-      color: movieFormColor,
-    };
-
-    handleSubmitMovie(movie);
-
-    setMovieFormTitle('');
-    setMovieFormName('');       
-    setMovieFormYearReleased('');       
-    setMovieFormColor('');
-  }
-
-
-  return <form onSubmit={handleSubmit}>
+  return <form onSubmit={handleSubmitMovie}>
     <label>
       Title
       <input required value={movieFormTitle} onChange={e => setMovieFormTitle(e.target.value)}/>
