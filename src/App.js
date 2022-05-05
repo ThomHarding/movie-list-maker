@@ -12,7 +12,6 @@ function App() {
   const [movieFormColor, setMovieFormColor] = useState('');
 
   function handleDeleteMovie(title) {
-    console.log(title);
     const index = allMovies.findIndex(movie => movie.title === title);
     allMovies.splice(index, 1);
     setAllMovies([...allMovies]);
