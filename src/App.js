@@ -30,9 +30,10 @@ function App() {
     setMovieFormDirector('');
     setMovieFormTitle('');
   }
+
   function handleFilterMovies(search) {
     const filtered = allMovies
-      .filter(movie => movie.name.toLowerCase().includes(search.toLowerCase()));
+      .filter(movie => movie.title.toLowerCase().includes(search.toLowerCase()));
     if (search) {
       setFilteredMovies(filtered);
     } else {
