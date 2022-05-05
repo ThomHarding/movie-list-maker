@@ -12,6 +12,7 @@ function App() {
   const [movieFormColor, setMovieFormColor] = useState('');
 
   function handleDeleteMovie(title) {
+    console.log(title);
     const index = allMovies.findIndex(movie => movie.title === title);
     allMovies.splice(index, 1);
     setAllMovies([...allMovies]);
@@ -61,7 +62,7 @@ function App() {
         <input onChange={(e) => handleFilterMovies(e.target.value)} />
       </div>
       <MovieList
-        handleDeleteMovies={handleDeleteMovie}
+        handleDeleteMovie={handleDeleteMovie}
         movies={(filteredMovies.length !== 0) ? filteredMovies : allMovies} />
     </div>
   );

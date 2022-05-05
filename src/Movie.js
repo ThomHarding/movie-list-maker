@@ -7,7 +7,7 @@ export default function Movie({
   year,
   handleDeleteMovie,
 }) {
-  return <div 
+  return <div
     onClick={() => handleDeleteMovie ? handleDeleteMovie(title) : null}
     className='movie-item' style={{ background: color }}>
     <h3>{title}</h3>
