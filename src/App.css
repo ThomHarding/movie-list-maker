@@ -37,6 +37,21 @@
   }
 }
 
-.img {
-  background-color: t;
+.movieForm {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  margin: 5px;
+}
+
+input {
+  margin-left: 2px;
+}
+
+select {
+  margin-left: 2px;
 }
