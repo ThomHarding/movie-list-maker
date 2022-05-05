@@ -25,7 +25,7 @@ function App() {
       year: movieFormYearReleased,
       director: movieFormDirector };
     setAllMovies([...allMovies, newMovie]);
-    setMovieFormColor('');
+    setMovieFormColor('ochre');
     setMovieFormYearReleased('');
     setMovieFormDirector('');
     setMovieFormTitle('');
