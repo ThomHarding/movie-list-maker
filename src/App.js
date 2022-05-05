@@ -45,11 +45,14 @@ function App() {
     <div className="App">
       <div className='movieForm'>
         <MovieForm
+          movieFormDirector={movieFormDirector}
           setMovieFormName={setMovieFormDirector}
           movieFormYearReleased={movieFormYearReleased}
-          setMovieFormTitle={movieFormDirector}
-          setMovieFormColor={setMovieFormColor}
+          setMovieFormYearReleased={setMovieFormYearReleased}
+          movieFormTitle={movieFormTitle}
+          setMovieFormTitle={setMovieFormTitle}
           movieFormColor={movieFormColor}
+          setMovieFormColor={setMovieFormColor}
           handleSubmitMovie={handleSubmitMovie}
         />
       </div>
